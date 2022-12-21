@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 class TransactionController extends Controller
 {
-    public function index()
+    public function index() 
     {
         $transactions = \App\Models\Transaction::with('user')->get();
 
